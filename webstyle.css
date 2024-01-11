@@ -1,0 +1,240 @@
+/*Styling for Navigation*/
+/*Creates a class of navigation called navbar. navbar is used to help style the navigation bar of website. Assigns the position of the navigation bar to absolute and
+the width of the navigation bar to 200px*/
+nav.navbar{
+  position: absolute;
+  width: 200px;
+}
+
+/*Assigns a navbar with a unordered list to have a margin of 0, display type of inline, and removes the bullets of the unordered lists*/
+nav.navbar ul {
+  margin: 0;
+  display: inline;
+  list-style-type: none;
+}
+
+/*Assigns the links in a navbar with a unordered list to have a margin of 2px, padding of 10px, display type of inline block, a width of 200px. In terms of text, aligns
+  the text in the center, adds no text decoration. In terms of font, changes the font family to  Helvetica, Verdana, Arial and font size to 20px*/
+nav.navbar ul a{
+  margin: 2px;
+  padding: 10px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+  font-size: 20px;
+}
+
+/*Assigns the colour of the font of a link to AliceBlue and the background to MidnightBlue*/
+nav.navbar li a:link, a:visited {
+  background-color: MidnightBlue;
+  color: AliceBlue;
+}
+
+/*Assigns the colour of the background when hovering over a link to #484848*/
+nav.navbar ul li a:hover, a:active {
+  background-color: #484848;
+}
+
+/*Styling for body*/
+/*Changes the backround of the body to AliceBlue. Assigns margins of 20px to the entire body.*/
+body
+{
+  background-color: AliceBlue;
+  margin: 20px;
+}
+
+/*Styling for Paragraph, quote, citation and figcaption*/
+/*Changes the font family to Verdana, Helvetica, Arial, changes the font size to 18px, and changes the colour of the font to #484848*/
+p, citation, figure{
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 18px;
+  color: #484848;
+}
+
+/*Changes the font family to Georgia, Verdana, Helvetica, Arial, changes the font size to 22px, and changes the colour of the font to #484848*/
+p.quote{
+  font-family: Georgia, Verdana, Helvetica, Arial;
+  font-size: 22px;
+  color: MidnightBlue;
+  padding: 10px;
+}
+
+/*Creates a class called content. Content styles all content through assigning a left margin of 240px*/
+.content{
+  margin-left: 240px;
+}
+
+/*Adds a 2px solid MidnightBlue border with the colour. Changes the font family to Georgia, Helvetica, Verdana, Arial, changes the text alignment to left,
+  and changes the colour of the font to MidnightBlue. Adds padding of 2px.*/
+h1 {
+  color: MidnightBlue;
+  border-style: solid;
+  border-width: 2px;
+  border-color: MidnightBlue;
+  padding: 2px;
+  text-align: center;
+  font-family: Georgia, Helvetica, Verdana, Arial;
+}
+
+/*Changes the font family to Georgia, Helvetica, Verdana, Arial, changes the alignment of text to left, and changes the colour of the font to MidnightBlue*/
+h2{
+  color: MidnightBlue;
+  font-family: Georgia, Helvetica, Verdana, Arial;
+  text-align: left;
+}
+
+/*Creates a class of h2 called return. return will produce a button looking appearance of a header, which will be used to present the link to the user*/
+h2.return{
+  color: AliceBlue;
+  background-color: MidnightBlue;
+  margin-left: 240px;
+  text-align: center;
+  padding: 10px;
+  font-family: Georgia, Helvetica, Verdana, Arial;
+  width: 200px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*Changes the font family to Georgia, Helvetica, Verdana, Arial, changes the alignment of text to left, and changes the colour of the font to MidnightBlue*/
+h3{
+  color: MidnightBlue;
+  font-family: Georgia, Helvetica, Verdana, Arial;
+  text-align: left;
+}
+
+/*Styling for table*/
+/*Adds a 1px solid MidnightBlue border to the table, removes the double border, adds a padding of 10px to the table and border spacing of 1px. Changes the font family to
+ Verdana, Helvetica, Arial, changes the font size to 16px, and changes the colour of the font to #484848*/
+table, th, td {
+  border: 1px solid MidnightBlue;
+  border-collapse: collapse;
+  padding: 10px;
+  border-spacing: 1px;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 18px;
+  color: #484848;
+}
+
+/*Creates a class of table called center. center is utilized to help center a table through assigning the right and left margins to zero.*/
+table.center {
+  margin-right:auto;
+  margin-left: auto;
+}
+
+/*Aligns the table headings to the center of the cell*/
+th{
+  text-align: center;
+}
+
+/*Aligns the table data to the left*/
+td{
+  text-align: left;
+}
+
+/*Styling for images*/
+/*Creates a class of images called article. article is utilized to help style the links used in the different articles throughout the website. The class changes the border radius
+  to 4px, which produces a slightly rounded corner. The class applies a filter of drop shadow to the images*/
+img.article{
+  border-radius: 4px;
+  filter: drop-shadow(4px 4px 4px #484848);
+  width: 40%;
+}
+
+/*Creates a class of image called banner. banner is utilized to help style the 404 error message and header banner, which via the class be responsive to the change of the
+  width of the browser*/
+img.banner{
+  width: 75%
+}
+
+img.socialMedia:hover {
+  opacity: 40%;
+}
+
+/*Styling for links*/
+/*Creates a class of links called article and quote. article and quote are utilized to help style the links used in different articles and quotes throughout the website. The class changes the font family
+to family to Verdana, Helvetica, Arial. Changes an active link to the colour of MidnightBlue. Change the colour of a visited link to FireBrick. Changes the colour of
+an link that is being hovered over to ForestGreen. Changes the colour of an active link to the colour of Peru*/
+a.article:link {
+  color: MidnightBlue;
+  font-family: Verdana, Helvetica, Arial;
+}
+a.article:visited {
+  color: FireBrick;
+  font-family: Verdana, Helvetica, Arial;
+}
+a.article:hover {
+  color: ForestGreen;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+}
+a.article:active {
+  color: Peru;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+}
+
+a.quote:link {
+  color: MidnightBlue;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+}
+a.quote:visited {
+  color: FireBrick;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+}
+a.quote:hover {
+  color: ForestGreen;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+}
+a.quote:active {
+  color: Peru;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+}
+
+/*Removes underline from the link that returns the user back to the homepage from the 404 page*/
+a.return{
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/*Styling for lists*/
+/*Creates a class of unordered list called article. article is utilized to help style the lists used in different articles throughout the website. The class changes the font
+  family to Verdana, Helvetica, Arial. Assigns the font size to 18px. Changes the colour of the font to #484848 and changes the bullet used in the list to a square */
+ul.article{
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 18px;
+  color: #484848;
+  list-style-type: square;
+}
+
+/*Creates a class of unordered lists called brandLinks. brandLinks is utilized to help style the links of a sustainable brand, which includes social media and their
+  online store. The class removes the bullets from the ordered list and displays the different links or symbols in line*/
+ul.brandLinks
+{
+  list-style-type: none;
+  display: inline;
+}
+
+ul.socialMedia{
+  list-style-type: none;
+}
+
+ul.socialMedia li{
+  display: inline-block;
+  padding: 10px;
+}
+
+/*Styling for footer*/
+footer{
+  /*Adds a solid border of size 2px in Midnight Blue surrounding the footer. Removes the bullets from the unordered list containing contact information.
+    Changes the font family to Verdana, Helvetica, Arial. Aligns the text to the left. Assigns the colour of the font to #484848. Assigns font size to 18px*/
+  border-style: solid;
+  border-width: 2px;
+  border-color: MidnightBlue;
+  list-style-type: none;
+  color: #484848;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+}
